@@ -236,7 +236,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71008e5e00894234e988fb763b08be14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BolasDeBoliche: {fileID: 1592636988399232418, guid: 2f3fde94b57fe5346ab329cda7b33411, type: 3}
+  BolasDeBoliche:
+  - {fileID: 4552618901435034813, guid: fa4d48e5b4139b846a3859ee180a7cba, type: 3}
+  - {fileID: 5212578655405582375, guid: eb9d4710382016d42a9c313490421c04, type: 3}
+  - {fileID: 6914061376323410191, guid: a5b38da3c6bbea24c8056d045f6deea5, type: 3}
+  - {fileID: 1592636988399232418, guid: 2f3fde94b57fe5346ab329cda7b33411, type: 3}
+  tempo: 0
 --- !u!4 &1134349565
 Transform:
   m_ObjectHideFlags: 0
@@ -245,7 +250,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1134349563}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 5.43, z: 0.034006603}
+  m_LocalPosition: {x: 0, y: 5.78, z: 0.034006603}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -373,7 +378,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1781204189}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58789bb71b9e58040b667168b15ce087, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b70214e4019a114da2a4e6da8218a6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tempo: 0
