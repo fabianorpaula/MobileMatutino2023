@@ -26,4 +26,10 @@ public class Gerenciador : MonoBehaviour
     {
         Pontos = Pontos + qtdPontos;
     }
+
+    public int InformaPontos()
+    {
+        return Pontos;
+    }
+
 }
