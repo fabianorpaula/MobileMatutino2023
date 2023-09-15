@@ -7,7 +7,18 @@ public class Gerenciador : MonoBehaviour
     public int Vida = 3;
     public int Pontos = 0;
     public GameObject TelaMorte;
-    
+    private Banco meuBanco;
+
+    private void Start()
+    {
+        meuBanco = GetComponent<Banco>();
+        Pontos = meuBanco.SaldoDinheiro();
+    }
+
+    private void Update()
+    {
+        
+    }
 
     public void PerdeVida()
     {
@@ -35,6 +46,7 @@ public class Gerenciador : MonoBehaviour
 
     public void Morreu()
     {
+        meuBanco.GuardarDinheiro(Pontos);
         Time.timeScale = 0;
         TelaMorte.SetActive(true);
     }
