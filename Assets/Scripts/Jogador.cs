@@ -7,7 +7,14 @@ public class Jogador : MonoBehaviour
     public bool botaoAtivado = false;
     public float tempo;
     public bool podeMover = false;
-    
+
+    private void Start()
+    {
+        //Começar
+        Time.timeScale = 1;
+
+    }
+
     void Update()
     {
         //Controle de Tempo

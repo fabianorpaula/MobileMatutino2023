@@ -50,4 +50,11 @@ public class Gerenciador : MonoBehaviour
         Time.timeScale = 0;
         TelaMorte.SetActive(true);
     }
+
+    public void Reviver()
+    {
+        Time.timeScale = 1;
+        TelaMorte.SetActive(false);
+        Vida = 1;
+    }
 }

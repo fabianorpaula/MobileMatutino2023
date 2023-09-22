@@ -7,8 +7,14 @@ using GoogleMobileAds.Api;
 public class Propaganda : MonoBehaviour
 {
 
+    private Gerenciador GJ;
+
     public void Start()
     {
+        //Pega o Gerenciador do Jogo
+        GJ = GameObject.FindGameObjectWithTag("GameController").GetComponent<Gerenciador>();
+
+
         // Initialize the Google Mobile Ads SDK.
         MobileAds.Initialize((InitializationStatus initStatus) =>
         {
@@ -76,6 +82,7 @@ public class Propaganda : MonoBehaviour
             {
                 // TODO: Reward the user.
                 Debug.Log("DEU CERTO");
+                GJ.Reviver();
             });
         }
     }
